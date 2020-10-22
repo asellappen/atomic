@@ -3,9 +3,9 @@ arch:
    - amd64
    - ppc64le
 language: go
+        - "1.13.x"
 go_import_path: go.uber.org/atomic
-go_import_path: github.com/stretchr/testify/assert
-go_import_path: go.uber.org/assert
+
 env:
   global:
     - GO113MODULE=on
