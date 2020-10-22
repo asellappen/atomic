@@ -7,7 +7,7 @@ go_import_path: go.uber.org/atomic
 
 env:
   global:
-    - GO113xMODULE=on
+    - GO111MODULE=on
 
 matrix:
   include:
