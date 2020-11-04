@@ -5,7 +5,7 @@ arch:
 language: go
         - "1.14"
 go_import_path: go.uber.org/atomic
-#go_import_path: github.com/stretchr/testify/assert
+go_import_path: github.com/stretchr/testify/assert
 
 env:
   global:
@@ -16,6 +16,11 @@ matrix:
   - go: oldstable
   - go: stable
     env: LINT=1
+  - go: oldstable
+    arch : ppc64le
+  - go: stable
+    env: LINT=1
+    arch : ppc64le
 
 cache:
   directories:
