@@ -5,6 +5,7 @@ arch:
 language: go
         - "1.15"
 go_import_path: go.uber.org/atomic
+go_import_path: go.uber.org/atomic/internal
 go_import_path: github.com/stretchr/testify/assert
 
 env:
@@ -28,7 +29,7 @@ cache:
 
 before_install:
   - go version
-  - go get github.com/stretchr/testify/assert
+
 
 script:
   - test -z "$LINT" || make lint
