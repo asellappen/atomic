@@ -30,7 +30,6 @@ before_install:
   - go version
  # - go get github.com/stretchr/testify/assert
 
-
 script:
   - test -z "$LINT" || make lint
   - make cover
