@@ -4,7 +4,7 @@ arch:
    - ppc64le
 language: go
         - "1.15.3"
-go_import_path: go.uber.org/atomic
+#go_import_path: go.uber.org/atomic
 go_import_path: github.com/stretchr/testify/assert
 
 env:
